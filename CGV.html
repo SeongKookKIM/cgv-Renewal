@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGV</title>
+    <!-- Swiper Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- AOS Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/bf7da0ccad.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper Library-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- AOs Libary -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Jquery -->
+    <script src="lib/jquery-3.1.1.min.js"></script>
+    <script src="lib/jquery.easing.1.3.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="video">
+      <div class="hero">
+        <div class="overlay"></div>
+        <!-- video -->
+        <video autoplay loop muted>
+          <source src="img/video.mp4" type="video/mp4" />
+        </video>
+        <!-- Menu Top -->
+        <div class="menu-top">
+          <nav>
+            <ul>
+              <li>
+                <i class="fa-solid fa-key"></i>
+                <p>로그인</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-user-plus"></i>
+                <p>회원가입</p>
+              </li>
+              <!-- LOGO -->
+              <li>
+                <div class="logo-box">
+                  <img src="img/logoRed.png" alt="Logo" />
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-user"></i>
+                <p>My CGV</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-headset"></i>
+                <p>고객센터</p>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sticky Menu -->
+    <div class="sticky-wrapper">
+      <nav>
+        <ul class="sticky-cover">
+          <li><a href="#">영화</a></li>
+          <li><a href="#">극장</a></li>
+          <li><a href="#">예매</a></li>
+          <li><a href="#">스토어</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">혜택</a></li>
+          <li>
+            <div class="search-box">
+              <form action="." method="post">
+                <input class="search-txt" type="text" placeholder="" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </form>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="sticky-inner">
+          <li>
+            <a href="#">영화</a>
+            <ol>
+              <li>
+                <a href="#">무비차트</a>
+                <a href="#">아트하우스</a>
+                <a href="#">ICECON</a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">극장</a>
+            <ol>
+              <li>
+                <a href="#">CGV 극장</a>
+                <a href="#">특별관</a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">예매</a>
+            <ol>
+              <li>
+                <a href="#">빠른예매</a>
+                <a href="#">상영스케줄</a>
+                <a href="#">English Ticketing</a>
+                <a href="#">English Schedule</a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">스토어</a>
+            <ol>
+              <li>
+                <a href="#">영화관람권</a>
+                <a href="#">기프트카드</a>
+                <a href="#">콤보</a>
+                <a href="#">팝콘</a>
+                <a href="#">음료</a>
+                <a href="#">스낵</a>
+                <a href="#">플레이존</a>
+                <a href="#">씨네샵</a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">이벤트</a>
+            <ol>
+              <li>
+                <a href="#">SPECIAL</a>
+                <a href="#">영화/예매</a>
+                <a href="#">멤버십/CLUB</a>
+                <a href="#">CGV 극장별</a>
+                <a href="#">제휴할인</a>
+                <a href="#">당첨자 발표</a>
+                <a href="#">종료된 이벤트</a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">혜택</a>
+            <ol>
+              <li>
+                <a href="#">CGV 할인정보</a>
+                <a href="#">CLUB 서비스</a>
+                <a href="#">VIP 라운지</a>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- emty -->
+    <div class="emty"></div>
+    <!-- Content -->
+    <section id="movie-chart">
+      <div class="container">
+        <!-- Movie Chart Text -->
+        <div class="chart-text-box">
+          <div class="title">
+            <h2>무비차트</h2>
+            <h3>상영예정작</h3>
+          </div>
+          <p>
+            전체보기 <span><i class="fa-solid fa-arrow-right"></i></span>
+          </p>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="inner-black">
+                <div class="swiper-txt-inner">
+                  <h3>아바타</h3>
+                  <p>감독 : 제임스 카메론</p>
+                  <p>
+                    배우 : 조 샐다나 , 샘 워싱턴 , 시고니 위버 , 우나 채플린 ,
+                    지오바니 리비시 , 스티븐 랭 , 케이트 윈슬렛
+                  </p>
+                  <p>예매율 26.7%</p>
+                  <input type="button" value="예매하기" />
+                </div>
+              </div>
+              <div class="swiper-image">
+                <img src="img/chart01.jpg" alt="01" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inner-black">
+                <div class="swiper-txt-inner">
+                  <h3>방탄소년단: 옛 투 컴 인 시네마</h3>
+                  <p>감독 : 오윤동</p>
+                  <p>배우 : RM , 진 , 슈가 , 제이홉 , 지민 , 뷔 , 정국</p>
+                  <p>예매율 17.0%</p>
+                  <input type="button" value="예매하기" />
+                </div>
+              </div>
+              <div class="swiper-image">
+                <img src="img/chart02.jpg" alt="02" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inner-black">
+                <div class="swiper-txt-inner">
+                  <h3>교섭</h3>
+                  <p>감독 : 임순례</p>
+                  <p>프로듀서 : 문영화 / 배우 : 황정민 , 현빈 , 강기영</p>
+                  <p>예매율 13.6%</p>
+                  <input type="button" value="예매하기" />
+                </div>
+              </div>
+              <div class="swiper-image">
+                <img src="img/chart03.jpg" alt="03" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inner-black">
+                <div class="swiper-txt-inner">
+                  <h3>유령</h3>
+                  <p>감독 : 이해영</p>
+                  <p>배우 : 설경구 , 이하늬 , 박소담 , 박해수 , 서현우</p>
+                  <p>예매율 9.3%</p>
+                  <input type="button" value="예매하기" />
+                </div>
+              </div>
+              <div class="swiper-image">
+                <img src="img/chart04.jpg" alt="04" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inner-black">
+                <div class="swiper-txt-inner">
+                  <h3>상견니</h3>
+                  <p>감독 : 황천인</p>
+                  <p>배우 : 가가연 , 허광한 , 시백우</p>
+                  <p>예매율 8.6%</p>
+                  <input type="button" value="예매하기" />
+                </div>
+              </div>
+              <div class="swiper-image">
+                <img src="img/chart05.jpg" alt="05" />
+              </div>
+            </div>
+          </div>
+          <!-- Swiper-pagination-->
+          <div class="swiper-pagination"></div>
+          <!-- Swiper-button -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special -->
+    <section id="special">
+      <div class="container">
+        <div class="title">
+          <h2>특별관</h2>
+          <h3>Special</h3>
+        </div>
+        <!-- Left & Right -->
+        <div class="special-content">
+          <div class="special-left">
+            <div class="special-box-first">
+              <img
+                src="img/special01.png"
+                alt="01"
+                data-aos="zoom-out"
+                data-aos-duration="3000"
+              />
+              <div
+                class="special-txt"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <h4>4DX</h4>
+                <p>#모션시트 #오감체험</p>
+              </div>
+            </div>
+            <div class="special-box-third">
+              <img
+                src="img/special03.png"
+                alt="03"
+                data-aos="zoom-out"
+                data-aos-duration="3000"
+              />
+              <div
+                class="special-txt"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <h4>SUITE CINEMA</h4>
+                <p>#호텔 컨셉의 프리미엄관</p>
+              </div>
+            </div>
+          </div>
+          <div class="special-right">
+            <div class="special-box-second">
+              <img
+                src="img/special02.png"
+                alt="02"
+                data-aos="zoom-out"
+                data-aos-duration="3000"
+              />
+              <div
+                class="special-txt"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <h4>CINE de DHEF</h4>
+                <p>#쉐프가 있는 영화관</p>
+              </div>
+            </div>
+            <div class="special-box-four">
+              <img
+                src="img/special04.png"
+                alt="04"
+                data-aos="zoom-out"
+                data-aos-duration="3000"
+              />
+              <div
+                class="special-txt"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <h4>CINE & LIVING ROOM</h4>
+                <p>#신개냠 소셜 상영관</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card & Popcorn -->
+    <section id="card">
+      <div class="container">
+        <ul>
+          <li>
+            <h5>영화관람권</h5>
+            <div class="more-box">
+              <input type="button" value="더보기" />
+            </div>
+            <div class="card-box">
+              <ul>
+                <li>
+                  <img src="img/ticket01.jpg" alt="ticket01" />
+                  <div class="card-inner-txt">
+                    <p>CGV 영화관람권</p>
+                    <p>12,000원</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/ticket02.jpg" alt="ticket02" />
+                  <div class="card-inner-txt">
+                    <p>CGV 골드클래스</p>
+                    <p>40,000원</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/ticket03.jpg" alt="ticket03" />
+                  <div class="card-inner-txt">
+                    <p>4DX관람권</p>
+                    <p>19,000원</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <h5>기프트카드</h5>
+            <div class="more-box">
+              <input type="button" value="더보기" />
+            </div>
+            <div class="card-box">
+              <ul>
+                <li>
+                  <img src="img/gift-card01.jpg" alt="gift-card01" />
+                  <div class="card-inner-txt">
+                    <p>PACONNIE A형</p>
+                    <p>금액충전형</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/gift-card02.jpg" alt="gift-card02" />
+                  <div class="card-inner-txt">
+                    <p>PACONNIE A형</p>
+                    <p>금액충전형</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/gift-card03.jpg" alt="gift-card03" />
+                  <div class="card-inner-txt">
+                    <p>PACONNIE C형</p>
+                    <p>금액충전형</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <h5>영화관람권</h5>
+            <div class="more-box">
+              <input type="button" value="더보기" />
+            </div>
+            <div class="card-box">
+              <ul>
+                <li>
+                  <img src="img/popcorn01.jpg" alt="popcorn01" />
+                  <div class="card-inner-txt">
+                    <p>탄산음료(M)</p>
+                    <p>2,500원</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/popcorn02.jpg" alt="popcorn02" />
+                  <div class="card-inner-txt">
+                    <p>아메리카노(HOT)</p>
+                    <p>3,500원</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/popcorn03.jpg" alt="popcorn03" />
+                  <div class="card-inner-txt">
+                    <p>아메리카노(ICE)</p>
+                    <p>4,000원</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Event -->
+    <section id="event">
+      <div class="container">
+        <div class="title">
+          <h2>이벤트</h2>
+          <h3>Event</h3>
+        </div>
+        <ul>
+          <li data-aos="fade-up" data-aos-duration="2000">
+            <div class="event-image">
+              <img src="img/event01.jpg" alt="event01" />
+            </div>
+            <div class="event-txt">
+              <p>[영웅] 설날맞이 가족 관람 이벤트</p>
+              <p>2023.01.13 ~ 2023.01.26</p>
+            </div>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="2000">
+            <div class="event-image">
+              <img src="img/event02.jpg" alt="event02" />
+            </div>
+            <div class="event-txt">
+              <p>CGV x TVING 월정기 혜택 [CGV PLUS]</p>
+              <p>2022.12.02 ~ 2032.12.02</p>
+            </div>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="2000">
+            <div class="event-image">
+              <img src="img/event03.jpg" alt="event03" />
+            </div>
+            <div class="event-txt">
+              <p>[유령] 필름마크</p>
+              <p>2023.01.11 ~ 2023.01.24</p>
+            </div>
+          </li>
+        </ul>
+        <input type="button" value="더보기" />
+      </div>
+    </section>
+
+    <!-- AD -->
+    <section id="ad">
+      <div class="ad-image">
+        <img src="img/ad.png" alt="ad" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <h2 data-aos="fade-up" data-aos-duration="2000">
+          영화 그이상의 감동 CGV
+        </h2>
+        <h3 data-aos="fade-up" data-aos-duration="2000">CONTACT</h3>
+        <div
+          class="footer-text-box"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <!-- Footer Left -->
+          <div class="footer-left">
+            <div class="footer-left-inner-top">
+              <h4>공지사항</h4>
+              <p>[기타]개인정보처리방침 개정 안내 (1/16 시행)</p>
+              <input type="button" value="전체보기" />
+            </div>
+
+            <div class="footer-left-inner-bottom">
+              <h4>고객센터</h4>
+              <p>1544-1122</p>
+              <p>
+                고객센터 운영시간 (평일 09:00~18:00) 업무시간 외 자동응답 안내
+                가능합니다.
+              </p>
+            </div>
+          </div>
+          <!-- Footer Right -->
+          <div class="footer-right">
+            <h4>앱 다운로드</h4>
+            <p>CGV앱에서 더 편리하게 이용하세요</p>
+            <img src="img/qrcode.png" alt="qrcode" />
+            <p>QR코드를 스캔하고 <br />앱설치 페이지로 바로 이동하세요.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Stikcy-Menu -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="js/stikcy-menu.js"></script>
+    <script src="js/stickyfixed.js"></script>
+    <!-- Swiper -->
+    <script src="js/swiper.js"></script>
+    <!-- AOS -->
+    <script>
+      AOS.init({
+        default: true,
+      });
+    </script>
+    <!-- Smooth Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+      integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      SmoothScroll({
+        animationTime: 800,
+        stepSize: 75,
+
+        accelerationDelta: 30,
+        accelerationMax: 2,
+
+        keyboardSupport: true,
+        arrowScroll: 50,
+
+        pulseAlgorithm: true,
+        pulseScale: 4,
+        pulseNormalize: 1,
+
+        touchpadSupport: true,
+      });
+    </script>
+  </body>
+</html>
